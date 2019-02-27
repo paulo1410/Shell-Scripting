@@ -1,0 +1,7 @@
+sudo apt-get install mysql-server
+sudo mysql -u root
+create database mutillidae;
+use mutillidae
+create table produtos(livro VARCHAR(255), autor VARCHAR(255), preco_ebook VARCHAR(255), preco_livro VARCHAR(255));
+create table usuarios(nome VARCHAR(255), email VARCHAR(255), telefone VARCHAR(255), cidade VARCHAR(255));
+sudo mysql -u root mutillidae < ~/Downloads/mutillidae.sql
